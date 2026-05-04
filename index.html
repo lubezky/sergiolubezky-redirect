@@ -3,7 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <title>Redirigiendo...</title>
+
+  <script>
+    const path = window.location.pathname;
+
+    // Si alguien entra a /musica
+    if (path.startsWith("/musica")) {
+      window.location.replace("https://musica.sergiolubezky.com");
+    } else {
+      // Todo lo demás → lubezky.com
+      window.location.replace("https://lubezky.com");
+    }
+  </script>
+
 </head>
-<body>
-</body>
+<body></body>
 </html>
